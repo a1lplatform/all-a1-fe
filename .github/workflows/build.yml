@@ -9,10 +9,10 @@ jobs:
     name: Docker build & push image
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1  
+      - uses: actions/checkout@v1
         with:
           ssh-key: ${{ secrets.PRIVATE_SSH_KEY }}
-          repository: a1lplatform/employee-assessment-fe
+          repository: a1lplatform/employee-assessment-fe@master
       -
         name: Checkout
         uses: actions/checkout@v3
