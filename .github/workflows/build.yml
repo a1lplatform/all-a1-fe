@@ -14,7 +14,13 @@ jobs:
         uses: actions/checkout@v2
         with:
           ssh-key: ${{ secrets.PRIVATE_SSH_KEY }}
-          repository: a1lplatform/employee-assessment-fe.git@master
+          repository: a1lplatform/employee-assessment-fe
+      -
+        name: Checkout a1-platform-fe
+        uses: actions/checkout@v2
+        with:
+          ssh-key: ${{ secrets.PRIVATE_SSH_KEY }}
+          repository: phillipsho/a1-platform-fe
       -
         name: Checkout
         uses: actions/checkout@v3
