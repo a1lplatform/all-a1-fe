@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1  
         with:
+          ssh-key: ${{ secrets.PRIVATE_SSH_KEY }}
           repository: a1lplatform/employee-assessment-fe
-          token: ${{ secrets.PRIVATE_SSH_KEY }}
       -
         name: Checkout
         uses: actions/checkout@v3
