@@ -11,13 +11,13 @@ jobs:
     steps:
       - 
         name: Checkout employee-assessment-fe
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
         with:
           ssh-key: ${{ secrets.PRIVATE_SSH_KEY }}
           repository: a1lplatform/employee-assessment-fe
       -
         name: Checkout a1-platform-fe
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
         with:
           ssh-key: ${{ secrets.PRIVATE_SSH_KEY }}
           repository: phillipsho/a1-platform-fe
